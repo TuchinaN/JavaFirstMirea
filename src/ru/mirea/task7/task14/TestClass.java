@@ -8,9 +8,10 @@ public class TestClass {
         System.out.println(s1.getPerimeter()); // which version?
         System.out.println(s1.getColor());
         System.out.println(s1.isFilled());
-        System.out.println(((Circle) s1).getRadius());
+        //System.out.println(s1.getRadius());
         //такого метода нет в Shape, а объект s1 принадлежит именно к Shape
-        //исправление - ((Circle) s1).getRadius()
+        //исправление:
+        System.out.println(((Circle) s1).getRadius());
 
         Circle c1 = (Circle)s1; // Downcast back to Circle
         System.out.println(c1);
@@ -21,12 +22,16 @@ public class TestClass {
         System.out.println(c1.getRadius());
 
         //Shape s2 = new Shape();
+        //экземпляр абстрактного класса создать нельзя
 
         Shape s3 = new Rectangle(1.0, 2.0, "RED", false); // Upcast
         System.out.println(s3);
         System.out.println(s3.getArea());
         System.out.println(s3.getPerimeter());
         System.out.println(s3.getColor());
+        //System.out.println(s3.getLength());
+        //такого метода нет в Shape, а объект s3 принадлежит именно к Shape
+        //исправление:
         System.out.println(((Rectangle) s3).getLength());
 
         Rectangle r1 = (Rectangle)s3; // downcast
@@ -39,6 +44,9 @@ public class TestClass {
         System.out.println(s4);
         System.out.println(s4.getArea());
         System.out.println(s4.getColor());
+        //System.out.println(s4.getSide());
+        //такого метода нет в Shape, а объект s4 принадлежит именно к Shape
+        //исправление:
         System.out.println(((Square) s4).getSide());
 
 // Take note that we downcast Shape s4 to Rectangle,
@@ -47,6 +55,9 @@ public class TestClass {
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
+        //System.out.println(r2.getSide());
+        //такого метода нет в Rectangle, это метод класса Square
+        //исправление:
         System.out.println(((Square) r2).getSide());
         System.out.println(r2.getLength());
 
