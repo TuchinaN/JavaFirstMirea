@@ -8,4 +8,4 @@
 
 UML-диаграмма:
 
-![Диаграмма](C:\Users\tuchi\IdeaProjects\JavaFirstMirea\src\ru\mirea\task16\таблица.jpg)
+![Диаграмма](https://github.com/TuchinaN/JavaFirstMirea/blob/master/src/ru/mirea/task16/таблица.jpg?raw=true)
