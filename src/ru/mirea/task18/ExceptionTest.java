@@ -2,7 +2,6 @@ package ru.mirea.task18;
 
 public class ExceptionTest {
     static Client cl;
-    static BankProducts bp;
     static void takeMoney(int taking) {
         try{
             cl.balance -= taking;
