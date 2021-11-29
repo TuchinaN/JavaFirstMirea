@@ -2,10 +2,10 @@ package ru.mirea.task18;
 
 public class ExceptionTest {
     static Client cl;
-    static void takeMoney(int taking) {
+    static void testAccountNumb(int n) {
         try{
-            cl.balance -= taking;
-            if(cl.balance < 0) throw new RuntimeException("Ошибка баланса");
+            cl.accountNumb = n;
+            if(n < 0) throw new RuntimeException("Ошибка баланса");
         }finally {
             System.out.println("Произошла ошибка баланса! Он меньше 0!");
         }
