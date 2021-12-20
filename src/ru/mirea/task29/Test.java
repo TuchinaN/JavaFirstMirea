@@ -14,7 +14,7 @@ public class Test {
         CurrencyInfo currencyInfo = new CurrencyInfo(clientsInfo, employeeInfo, bankServicesInfo);
 
         //создаем 2 потока для сериализации объекта и сохранения его в файл
-        FileOutputStream outputStream = new FileOutputStream("C:\\Users\\ПК\\java\\save.ser");
+        FileOutputStream outputStream = new FileOutputStream("C:\\Users\\ПК\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task29\\save.ser");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
         // сохраняем данные в файл
@@ -24,7 +24,7 @@ public class Test {
         objectOutputStream.close();
 
 
-        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ПК\\java\\save.ser");
+        FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ПК\\IdeaProjects\\JavaFirstMirea\\src\\ru\\mirea\\task29\\save.ser");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
         CurrencyInfo currencyInfo1 = (CurrencyInfo) objectInputStream.readObject();
