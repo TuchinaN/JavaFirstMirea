@@ -12,9 +12,9 @@ public class TestGeneric {
     public static void main(String[] args) {
         BankProducts bp = BankProducts.Deposit;
         AdditService as = AdditService.MobileBank;
-        BankService bServ1 = new BankService(123, bp, as);
+        BankService bServ1 = new BankService(456, bp, as);
         bankServices.add(bServ1);
-        BankService bServ2 = new BankService(678, bp, as);
+        BankService bServ2 = new BankService(386, bp, as);
         bankServices.add(bServ2);
         printList(bankServices);
     }

@@ -2,9 +2,9 @@ package ru.mirea.task23;
 
 public class TestHash {
     public static void main(String[] args) {
-        Client cl1 = new Client("Adam", 123, 6);
-        Client cl2 = new Client("Bob", 674, 19);
-        Client cl3 = new Client("Clara", 789, 3);
+        Client cl1 = new Client("Kris", 123, 6);
+        Client cl2 = new Client("Lara", 674, 19);
+        Client cl3 = new Client("Mary", 789, 3);
 
         System.out.println("Проверим "+cl1.name+" и "+cl3.name+" на равенство");
         System.out.println(cl1.equals(cl3));
